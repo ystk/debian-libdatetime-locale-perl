@@ -1,0 +1,141 @@
+libdatetime-locale-perl (1:0.45-1) unstable; urgency=low
+
+  * New upstream release.
+    + Breaks libdatetime-format-strptime-perl (< 1.2000)
+  * Add lintian override for spelling-error-in-manpage: "nam" is used as an
+    abbreviation for the German word "nachmittags".
+  * debian/copyright: Update years of copyright, minor changes for DEP 5.
+  * Use source format 3.0 (quilt).
+  * Add myself to Uploaders.
+  * Bump Standards-Version to 3.8.4.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Mon, 22 Mar 2010 17:46:21 +0900
+
+libdatetime-locale-perl (1:0.44-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Standards-Version 3.8.3 (no changes)
+  * Add myself to Uploaders and Copyright
+  * Clean up control description
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza).
+  * Make (build) dependency on libparams-validate-perl versioned as per
+    upstream changes.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Mon, 21 Sep 2009 12:38:47 -0400
+
+libdatetime-locale-perl (1:0.43-1) unstable; urgency=low
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ gregor herrmann ]
+  * New upstream release:
+    + Based on CLDR 1.7.1, which includes support for several new languages
+  * Add /me to Uploaders.
+  * Set Standards-Version to 3.8.2 (no changes).
+  * Update to debhelper 7 (debian/{rules,compat,control}).
+  * Remove build dependency on libmodule-build-perl, dh prefers EUMM.
+  * debian/copyright: update years of copyright for lib/DateTime/Locale/*.
+  * Acticate more tests (debian/{control,rules}).
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 01 Jul 2009 18:24:36 +0200
+
+libdatetime-locale-perl (1:0.42-1) unstable; urgency=low
+
+  [ Gunnar Wolf
+  * New upstream release (Closes: #494163, #453368)
+  * Added myself as an uploader
+
+  [ Damyan Ivanov ]
+
+  * Take over for the Debian Perl Group on maintainer's request
+    (http://lists.debian.org/debian-perl/2008/09/msg00111.html)
+  * debian/control: Changed: Maintainer set to Debian Perl Group <pkg-
+    perl-maintainers@lists.alioth.debian.org> (was: Piotr Roszatycki
+    <dexter@debian.org>); Put myself as an uploader.
+  * debian/watch: use dist-based URL.
+  * update CLDR to 1.6.1
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Martín Ferrari ]
+  * Removing debian/cldr/, debian/tools: upstream is up-to-date, if there were
+    DFSG reasons for this, the correct way would be to repackage the source or
+    create another package just with this data. Anyway, the tool to regenerate
+    the .pm files doesn't work in debian (missing deps).
+  * debian/control: bumping S-V, adding myself to Uploaders, enhancing
+    Description. Removed yada dependency, replaced with debhelper; updated
+    dependencies to what upstreams asks.
+  * debian/copyright: added as non-generated file with current format.
+  * debian/rules: from scratch with debhelper.
+
+ -- Martín Ferrari <tincho@debian.org>  Wed, 18 Feb 2009 15:10:33 -0200
+
+libdatetime-locale-perl (1:0.35-1+1.5.0) unstable; urgency=low
+
+  * New upstream release. Closes: #451539.
+  * Build-Depends-Indep: libfile-find-rule-perl, libxml-simple-perl,
+    libdatetime-perl.
+  * Source package includes copy of CLDR.
+  * The library is now recreated from CLDR at build time.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Sat, 17 Nov 2007 18:21:59 +0100
+
+libdatetime-locale-perl (1:0.34-1) unstable; urgency=low
+
+  * New upstream release:
+    - This version works with Storable. Closes: #409756.
+  * Build-Depends-Indep: libfile-find-rule-perl. Another perl module for unit
+    tests.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Thu,  6 Sep 2007 14:44:22 +0200
+
+libdatetime-locale-perl (0.3101-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Mon, 13 Nov 2006 10:33:58 +0100
+
+libdatetime-locale-perl (0.22-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Mon, 18 Jul 2005 16:52:48 +0200
+
+libdatetime-locale-perl (0.09-2) unstable; urgency=low
+
+  * Remove Origin field and make lintian happy.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Mon,  9 Aug 2004 11:22:24 +0200
+
+libdatetime-locale-perl (0.09-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Thu, 11 Mar 2004 20:24:10 +0100
+
+libdatetime-locale-perl (0.05-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Fri, 31 Oct 2003 19:05:37 +0100
+
+libdatetime-locale-perl (0.03-2) unstable; urgency=low
+
+  * Fix clean target.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Tue, 19 Aug 2003 16:38:52 +0200
+
+libdatetime-locale-perl (0.03-1) unstable; urgency=low
+
+  * Initial Debian version.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Mon, 11 Aug 2003 22:55:45 +0200
+

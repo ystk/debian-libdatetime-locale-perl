@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build
+	perl -i -ple 'next unless(/^\.SH "NAME"/.../^\.SH/); \
+		s/DateTime::Locale::(\S+)/$$& \\- DateTime locale package for "$$1"/' \
+		blib/man3/DateTime::Locale::*
+
+override_dh_auto_test:
+	IS_MAINTAINER=1 dh_auto_test
