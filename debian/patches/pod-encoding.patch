@@ -1,0 +1,20 @@
+Description: add =encoding to POD
+ This is an error in perl 5.18
+Origin: vendor
+Bug-Debian: http://bugs.debian.org/709788
+Bug: https://rt.cpan.org/Ticket/Display.html?id=85628
+Forwarded: https://rt.cpan.org/Ticket/Display.html?id=85628
+Author: gregor herrmann <gregoa@debian.org>
+Last-Update: 2013-05-26
+
+--- a/lib/DateTime/Locale/Catalog.pm
++++ b/lib/DateTime/Locale/Catalog.pm
+@@ -3398,6 +3398,8 @@
+ 
+ __END__
+ 
++=encoding utf8
++
+ =head1 NAME
+ 
+ DateTime::Locale::Catalog - Provides a list of all valid locale names

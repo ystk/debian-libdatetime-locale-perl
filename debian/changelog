@@ -1,3 +1,33 @@
+libdatetime-locale-perl (1:0.45-2) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * Email change: Ansgar Burchardt -> ansgar@debian.org
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Fabrizio Regalli ]
+  * Add myself to Uploaders and Copyright.
+  * Switch d/compat to 8.
+  * Build-Depends: switch to debhelper (>= 8).
+  * Fixed lintian copyright-refers-to-symlink-license message.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Add a patch to fix the POD encoding. (Closes: #709788)
+  * debian/rules: fix the manpage whatis update.
+  * Don't run maintainer tests during package build.
+  * debian/copyright: switch formatting to Copyright-Format 1.0.
+  * Set Standards-Version to 3.9.4 (no changes).
+  * debian/control: remove versioned breaks on libdatetime-format-
+    strptime-perl. The broken version is not in any supported Debian
+    release anymore.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 26 May 2013 16:53:33 +0200
+
 libdatetime-locale-perl (1:0.45-1) unstable; urgency=low
 
   * New upstream release.

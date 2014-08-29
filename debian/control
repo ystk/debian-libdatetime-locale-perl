@@ -1,25 +1,32 @@
 Source: libdatetime-locale-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Damyan Ivanov <dmn@debian.org>,
+           Martín Ferrari <tincho@debian.org>,
+           Jonathan Yu <jawnsy@cpan.org>,
+           gregor herrmann <gregoa@debian.org>,
+           Ansgar Burchardt <ansgar@debian.org>,
+           Fabrizio Regalli <fabreg@fabreg.it>
 Section: perl
 Priority: extra
-Build-Depends: debhelper (>= 7.0.50)
-Build-Depends-Indep: perl, liblist-moreutils-perl, libparams-validate-perl (>= 0.91),
- libtest-output-perl, libtest-pod-perl, libtest-pod-coverage-perl,
- libfile-find-rule-perl
-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
-Uploaders: Damyan Ivanov <dmn@debian.org>, Gunnar Wolf <gwolf@debian.org>,
- Martín Ferrari <tincho@debian.org>, Jonathan Yu <jawnsy@cpan.org>,
- gregor herrmann <gregoa@debian.org>, Ansgar Burchardt <ansgar@43-1.org>
-Standards-Version: 3.8.4
-Vcs-Svn: svn://svn.debian.org/pkg-perl/trunk/libdatetime-locale-perl/
-Vcs-Browser: http://svn.debian.org/viewsvn/pkg-perl/trunk/libdatetime-locale-perl/
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl,
+                     liblist-moreutils-perl,
+                     libparams-validate-perl,
+                     libtest-output-perl,
+                     libfile-find-rule-perl
+Standards-Version: 3.9.4
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libdatetime-locale-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libdatetime-locale-perl.git
 Homepage: http://datetime.perl.org/
 
 Package: libdatetime-locale-perl
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}, liblist-moreutils-perl,
- libparams-validate-perl (>= 0.91)
-Breaks: libdatetime-format-strptime-perl (<< 1.2000)
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         liblist-moreutils-perl,
+         libparams-validate-perl
 Description: Perl extension providing localization support for DateTime
  DateTime::Locale extends DateTime by providing localization support. It also
  provides some functions for getting information on available locales and is
  easily customizable through the addition of new locales.
+
